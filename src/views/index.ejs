@@ -1,18 +1,38 @@
-<%- include('includes/head.ejs'); %>
-<body>
+<%- include('includes/head') %>
+<%- include('includes/nav') %>
 
+<div class="container">
+  <div class="row">
+    <div class="col-lg-2"></div>
 
-  <section class="container">
-    <h1>
-      <%= titulo %>
+    <div class="col-lg-8 my-3">
+      <h1 class="text-center">Agenda</h1>
+      <p class="text-center lead">Backup de contatos importantes!</p>
 
-    </h1>
-    <form action="/" method="post">
-      <input type="hidden" name="_csrf" value="<%= csrfToken %>">
-      <label>Cliente</label>
-      <input type="text" name="cliente">
-      <button>Submit</button>
-    </form>
-  </section>
-  
-  <%- include('includes/footer.ejs'); %>
+      <div class="row">
+        <div class="col my-2">
+          <div class="alert alert-danger">Mensagem de erro</div>
+        </div>
+      </div>
+
+      <div class="responsive-table">
+        <table class="table my-2">
+          <tr>
+            <td>Ned</td>
+            <td>Stark</td>
+            <td>(21) 9 9999-9999</td>
+            <td>nedstark@got.com</td>
+            <td>23/11/1959</td>
+          </tr>  
+     
+        </table>
+      </div>
+
+    </div>
+
+    <div class="col-lg-2"></div>
+  </div>
+</div>
+<%- include('includes/footer') %>
+
+   
