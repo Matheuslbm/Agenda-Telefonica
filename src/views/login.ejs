@@ -16,7 +16,7 @@
           <h4>Faça seu cadastro</h4>
           <p>Se você não possui uma conta, cadastre-se para iniciar.</p>
 
-          <form action="/login/register" method="POST">
+          <form class="form-cadastro" action="/login/register" method="POST">
             <input type="hidden" name="_csrf" value= <%= csrfToken %>>
 
 
@@ -43,7 +43,7 @@
 
           <p>Se você já tem uma conta, faça login abaixo!</p>
 
-          <form action="/login/login" method="POST">
+          <form class="form-login" action="/login/login" method="POST">
             <input type="hidden" name="_csrf" value= <%= csrfToken %>>
             
             <div class="mb-3">
